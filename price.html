@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://dezhurstva.veridok.ru/price.html">
+<title>Цена — график дежурств и эскалация алертов</title>
+<meta name="description" content="Цена сервиса дежурств для ИТ-команд: график, приём алертов из Zabbix, Prometheus и Grafana, звонки, SMS и Telegram с эскалацией.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Дежурный на связи</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">График дежурств, алерты из мониторинга, звонок, SMS и Telegram с подтверждением, цепочка эскалации.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>За инженера</b><span>790 ₽ в месяц за каждого инженера в графике дежурств.</span><br><a class="btn" href="pay.html?plan=za_inzhenera" data-ev="payment_click click_pay_za_inzhenera">Оплатить — 790 ₽</a></div>
+      <div class="card"><b>Команда до 15 инженеров</b><span>9 900 ₽ в месяц за команду до 15 инженеров.</span><br><a class="btn" href="pay.html?plan=komanda" data-ev="payment_click click_pay_komanda">Оплатить — 9 900 ₽</a></div>
+    </div>
+    <p class="note nalog">Цены указаны без НДС.</p>
+    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Оповещения доставляются по графику и правилам, которые задаёте вы. Сервис не заменяет мониторинг и не отвечает за устранение инцидентов.</p>
+</div></footer>
+
+</body>
+</html>
