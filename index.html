@@ -8,6 +8,10 @@
 <meta name="description" content="Для ИТ-команд с сервисом 24/7: график дежурств, алерты из Zabbix, Prometheus и Grafana дежурному звонком, SMS и в Telegram, эскалация без подтверждения.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Дежурный на связи</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Дежурный на связи</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Алерт ночью дойдёт до того, кто дежурит, — а если он не ответил, до следующего</h1>
-    <p class="sub">Для ИТ-команд от 5 до 50 инженеров, у которых сервис работает круглосуточно: график дежурств, приём алертов из мониторинга и оповещение дежурного звонком, SMS и в Telegram с подтверждением и цепочкой эскалации.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для ИТ-команд от 5 до 50 инженеров</p>
+      <h1 class="rise" style="--i:1" data-len="long">Алерт ночью дойдёт до того, кто дежурит,&nbsp;<span class="soft">— а если он не ответил, до следующего</span></h1>
+      <p class="rise" style="--i:2">Для ИТ-команд от 5 до 50 инженеров, у которых сервис работает круглосуточно: график дежурств, приём алертов из мониторинга и оповещение дежурного звонком, SMS и в Telegram с подтверждением и цепочкой эскалации.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="160" font-size="40" font-weight="600" fill="#0a1524">Алерт ночью</text><line x1="130" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="292" font-size="32" font-weight="600" fill="#0a1524">Zabbix</text><rect x="130" y="370" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="402" font-size="32" font-weight="600" fill="#0a1524">Prometheus</text><rect x="130" y="480" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="200" y="512" font-size="32" font-weight="600" fill="#0a1524">Grafana</text><rect x="200" y="580" width="340" height="24" rx="12" fill="#dde2ea" /><rect x="680" y="250" width="390" height="420" rx="20" fill="#dfe8f7" /><text x="710" y="320" font-size="34" font-weight="600" fill="#0a1524">Telegram</text><circle cx="760" cy="430" r="34" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><circle cx="900" cy="430" r="34" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><circle cx="1040" cy="430" r="34" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><circle cx="830" cy="540" r="34" fill="#b9c3d2" stroke="#dde2ea" stroke-width="3" /><circle cx="970" cy="540" r="34" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>ИТ-команд от 5</dd></div>
+      <div><dt>График</dt><dd>График дежурств</dd></div>
+      <div><dt>Оповещение</dt><dd>Звонком, SMS и в Telegram</dd></div>
+      <div><dt>Сейчас</dt><dd>В подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>График дежурств</b><span>Ротация по дням или неделям, замены и отпуска.</span><br><a class="btn" href="price.html" data-ev="feature_grafik">Мне это нужно</a></div>
-      <div class="card"><b>Алерты из мониторинга</b><span>Приём из Zabbix, Prometheus и Grafana.</span><br><a class="btn" href="price.html" data-ev="feature_alerty">Мне это нужно</a></div>
-      <div class="card"><b>Звонок, SMS, Telegram</b><span>Дежурный подтверждает, что увидел алерт.</span><br><a class="btn" href="price.html" data-ev="feature_kanaly">Мне это нужно</a></div>
-      <div class="card"><b>Цепочка эскалации</b><span>Не подтвердил вовремя — оповещение идёт дальше.</span><br><a class="btn" href="price.html" data-ev="feature_eskalaciya">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="34" font-weight="600" fill="#0a1524">График дежурств</text><rect x="130" y="210" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="260" y="210" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="390" y="210" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="520" y="210" width="100" height="64" rx="10" fill="#12397a" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="300" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="260" y="300" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="390" y="300" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="520" y="300" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="390" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="260" y="390" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="390" y="390" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="520" y="390" width="100" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>График дежурств</h3><p>Ротация по дням или неделям, замены и отпуска.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_grafik">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="155" font-size="34" font-weight="600" fill="#0a1524">Алерты из мониторинга</text><rect x="120" y="220" width="36" height="36" rx="8" fill="#12397a" /><rect x="176" y="226" width="460" height="24" rx="12" fill="#dde2ea" /><rect x="120" y="300" width="36" height="36" rx="8" fill="#dfe8f7" /><rect x="176" y="306" width="380" height="24" rx="12" fill="#dde2ea" /><rect x="120" y="380" width="36" height="36" rx="8" fill="#b9c3d2" /><rect x="176" y="386" width="420" height="24" rx="12" fill="#dde2ea" /><rect x="120" y="460" width="36" height="36" rx="8" fill="#dfe8f7" /><rect x="176" y="466" width="300" height="24" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>Алерты из мониторинга</h3><p>Приём из Zabbix, Prometheus и Grafana.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_alerty">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="34" font-weight="600" fill="#0a1524">Звонок, SMS, Telegram</text><text x="120" y="240" font-size="32" font-weight="600" fill="#0a1524">SMS</text><rect x="120" y="268" width="460" height="40" rx="20" fill="#12397a" /><text x="120" y="370" font-size="32" font-weight="600" fill="#0a1524">Telegram</text><rect x="120" y="398" width="300" height="40" rx="20" fill="#dde2ea" /><rect x="120" y="460" width="520" height="24" rx="12" fill="#b9c3d2" /></svg></div>
+        <h3>Звонок, SMS, Telegram</h3><p>Дежурный подтверждает, что увидел алерт.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_kanaly">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="160" font-size="32" font-weight="600" fill="#0a1524">Цепочка эскалации</text><rect x="120" y="280" width="150" height="70" rx="28" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="330" y="280" width="150" height="70" rx="28" fill="#12397a" /><rect x="540" y="280" width="150" height="70" rx="28" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><line x1="270" y1="315" x2="330" y2="315" stroke="#12397a" stroke-width="4" /><line x1="480" y1="315" x2="540" y2="315" stroke="#b9c3d2" stroke-width="4" /><circle cx="195" cy="420" r="16" fill="#dfe8f7" /><circle cx="405" cy="420" r="16" fill="#12397a" /><circle cx="615" cy="420" r="16" fill="#dde2ea" /></svg></div>
+        <h3>Цепочка эскалации</h3><p>Не подтвердил вовремя — оповещение идёт дальше.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_eskalaciya">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Интернет-магазин с командой из девяти инженеров. В три часа ночи Prometheus сообщает, что платёжный шлюз отвечает с ошибками. Сервис находит по графику дежурного и звонит ему, но тот не берёт трубку. Через десять минут без подтверждения звонок уходит второму по цепочке, тот подтверждает алерт в Telegram и начинает разбираться. Утром в истории видно, кто и когда получил алерт и кто его подтвердил.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Интернет-магазин с командой из девяти инженеров. В три часа ночи Prometheus сообщает, что платёжный шлюз отвечает с ошибками. Сервис находит по графику дежурного и звонит ему, но тот не берёт трубку. Через десять минут без подтверждения звонок уходит второму по цепочке, тот подтверждает алерт в Telegram и начинает разбираться. Утром в истории видно, кто и когда получил алерт и кто его подтвердил.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">Prometheus</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">Telegram</text><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="960" y="230" font-size="34" font-weight="600" fill="#0a1524" text-anchor="middle">подтверждает</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="36" font-weight="600" fill="#0a1524">по цепочке</text><rect x="170" y="440" width="58" height="58" rx="8" fill="#12397a" /><rect x="248" y="440" width="58" height="58" rx="8" fill="#dfe8f7" /><rect x="326" y="440" width="58" height="58" rx="8" fill="#dfe8f7" /><rect x="404" y="440" width="58" height="58" rx="8" fill="#dfe8f7" /><text x="170" y="620" font-size="32" fill="#566174">алерт</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>У сервиса, который работает круглосуточно, — интернет-магазина, SaaS, проекта веб-студии на поддержке — рано или поздно что-то ломается ночью или в выходной. Мониторинг это видит: Zabbix, Prometheus или Grafana присылают алерт. Вопрос в том, кто его получит и что будет, если он спит.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>У сервиса, который работает круглосуточно, — интернет-магазина, SaaS, проекта веб-студии на поддержке — рано или поздно что-то ломается ночью или в выходной. Мониторинг это видит: Zabbix, Prometheus или Grafana присылают алерт. Вопрос в том, кто его получит и что будет, если он спит.</p>
     <p>В небольших командах это обычно решается чатом: алерты сыплются в общий канал, и кто-нибудь его увидит. Ночью не видит никто. Или видят все сразу, и каждый думает, что разбирается кто-то другой.</p>
     <p>Крупные компании решают это отдельными системами дежурств. Западный образец — PagerDuty: график дежурств, оповещение дежурного и эскалация, если он не ответил. Российские продукты для крупных компаний тоже есть. Для команды в пять–пятьдесят инженеров нужно то же самое, но проще.</p>
     <p>Сервис начинается с графика. Вы заводите инженеров и задаёте ротацию: по дням, по неделям или своим порядком. Замены и отпуска отмечаются в графике, и в любой момент видно, кто дежурит сейчас и кто следующий.</p>
@@ -107,31 +141,34 @@
     <p>Подключение занимает немного времени: завести инженеров с их телефонами и Telegram, задать график и цепочку эскалации, указать адрес сервиса в настройках оповещений мониторинга и отправить пробный алерт, чтобы убедиться, что звонок и сообщение доходят.</p>
     <p>Номера телефонов и данные инженеров используются только для оповещений и не передаются третьим лицам.</p>
     <p>Сервис рассчитан на ИТ-команды в России от 5 до 50 инженеров, у которых сервис работает круглосуточно. Сейчас он в подготовке: сначала мы проверяем, нужен ли он командам.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Из каких систем принимаются алерты?</h3>
-    <p>Из Zabbix, Prometheus с Alertmanager и Grafana — на один адрес, без изменения самих систем мониторинга.</p>
-    <h3>Как оповещается дежурный?</h3>
-    <p>Звонком, SMS и сообщением в Telegram; дежурный подтверждает, что увидел алерт.</p>
-    <h3>Что будет, если дежурный не ответил?</h3>
-    <p>Через заданное время оповещение идёт следующему по цепочке эскалации.</p>
-    <h3>Можно ли не будить из-за мелочей?</h3>
-    <p>Да. Для каждого вида алертов задаётся, идёт он звонком сразу, сообщением или ждёт утра.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет — в подготовке. Сначала мы проверяем, нужен ли сервис командам.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Из каких систем принимаются алерты?</h3><p>Из Zabbix, Prometheus с Alertmanager и Grafana — на один адрес, без изменения самих систем мониторинга.</p></div>
+      <div class="split flip"><h3>Как оповещается дежурный?</h3><p>Звонком, SMS и сообщением в Telegram; дежурный подтверждает, что увидел алерт.</p></div>
+      <div class="split flip"><h3>Что будет, если дежурный не ответил?</h3><p>Через заданное время оповещение идёт следующему по цепочке эскалации.</p></div>
+      <div class="split flip"><h3>Можно ли не будить из-за мелочей?</h3><p>Да. Для каждого вида алертов задаётся, идёт он звонком сразу, сообщением или ждёт утра.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет — в подготовке. Сначала мы проверяем, нужен ли сервис командам.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Сколько у вас инженеров</h2>
-    <p><label>Инженеров в дежурствах<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>До 5</option><option>5–15</option><option>15–50</option><option>Больше 50</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Сколько у вас инженеров</h2>
+    </div>
+    <div class="tile stack">
+      <label>Инженеров в дежурствах<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 5</option><option>5–15</option><option>15–50</option><option>Больше 50</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Дежурный на связи</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Оповещения доставляются по графику и правилам, которые задаёте вы. Сервис не заменяет мониторинг и не отвечает за устранение инцидентов.</p>
+  <p>Оповещения доставляются по графику и правилам, которые задаёте вы. Сервис не заменяет мониторинг и не отвечает за устранение инцидентов.</p>
 </div></footer>
 
 </body>
